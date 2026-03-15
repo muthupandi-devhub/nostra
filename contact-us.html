@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra|E-commerce and Shopping Project Website</title>
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Style css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!---Top Bar-->
+        <div class="container__topbar">
+            <p class="container__topbar__topcontent">Sign Up and GET 20% OFF for your first Order </p>
+            <h4>X</h4>
+        </div>
+       <div class="container__navbar">
+            <div class="container__navbar__logo">
+                <h1 class="container__navbar__logo_title">Nostra</h1>
+            </div>
+
+            <div class="container__navbar_list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#new-arrivel">New Arrival</a></li>
+                    <li><a href="#most-wanted">Most Wanted</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!--sidebar view-->
+        <!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- Sidebar (Mobile) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>Nostra</h2>
+        <i class="fa-solid fa-xmark" id="sidebar-close"></i>
+    </div>
+    
+    <div class="sidebar-list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#new-arrivel">New Arrival</a></li>
+            <li><a href="#most-wanted">Most Wanted</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Hamburger Menu Button (Add this to your navbar) -->
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+        <!---contact Section-->
+        <section class="contact-section">
+    <form class="contact-form">
+        <h2 class="contact-title">Contact Us</h2>
+
+        <!-- First & Last Name -->
+        <div class="name-row">
+            <div class="name-field">
+                <label class="contact-label">
+                    <span class="required-star">*</span> First Name
+                </label>
+                <input 
+                    type="text" 
+                    placeholder="Enter Your First Name"
+                    required
+                    class="contact-input">
+            </div>
+
+            <div class="name-field">
+                <label class="contact-label">
+                    <span class="required-star">*</span> Last Name
+                </label>
+                <input 
+                    type="text" 
+                    placeholder="Enter Your Last Name"
+                    required
+                    class="contact-input">
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label class="contact-label">
+                <span class="required-star">*</span> Email
+            </label>
+            <input 
+                type="email" 
+                placeholder="Enter Your Email"
+                required
+                class="contact-input">
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+            <label class="contact-label">
+                <span class="required-star">*</span> Phone Number
+            </label>
+            <input 
+                type="tel" 
+                placeholder="Enter Your Phone Number"
+                required
+                class="contact-input">
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label class="contact-label">
+                <span class="required-star">*</span> Address
+            </label>
+            <textarea 
+                rows="4"
+                placeholder="Enter Your Address"
+                required
+                class="contact-textarea"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit-container">
+            <button 
+                type="submit"
+                class="submit-btn">
+                Submit
+            </button>
+        </div>
+    </form>
+</section>
+      
+
+        <!---news letter-->
+        <section class="news__letter">
+            <div class="news__letter_one">
+                <h1>Join our News Letter</h1>
+                <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+                <input type="text"><br>
+                <button>Subscribe</button>
+            </div>
+        </section>
+
+        <!---footer section-->
+        <section class="footer__section">
+            <div class="footer__section_title">
+                <h1>Nostra</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus! Lorem ipsum dolor sit amet.
+                </p>
+                <div class="footer__section_social">
+                    <i class="fa-brands fa-facebook" style="color: rgb(234, 237, 241);"></i>
+                    <i class="fa-brands fa-instagram" style="color: rgb(229, 233, 240);"></i>
+                    <i class="fa-brands fa-pinterest" style="color: rgb(238, 239, 241);"></i>
+                </div>
+                <p>&copy 2026 nostra@gmail.com</p>
+            </div>
+
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

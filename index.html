@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra|E-commerce and Shopping Project Website</title>
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Style css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!---Top Bar-->
+        <div class="container__topbar">
+            <p class="container__topbar__topcontent">Sign Up and GET 20% OFF for your first Order </p>
+            <h4>X</h4>
+        </div>
+        <!---header section-->
+        <div class="container__navbar">
+            <div class="container__navbar__logo">
+                <h1 class="container__navbar__logo_title">Nostra</h1>
+            </div>
+
+            <div class="container__navbar_list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#new-arrivel">New Arrival</a></li>
+                    <li><a href="#most-wanted">Most Wanted</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!--sidebar view-->
+        <!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- Sidebar (Mobile) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2>Nostra</h2>
+        <i class="fa-solid fa-xmark" id="sidebar-close"></i>
+    </div>
+    
+    <div class="sidebar-list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#new-arrivel">New Arrival</a></li>
+            <li><a href="#most-wanted">Most Wanted</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Hamburger Menu Button (Add this to your navbar) -->
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+        <!---hero Section-->
+        <section class="hero__section">
+
+            <div class="hero__section__img">
+                <img src="assets/img/slider-one.jpg" class="slider">
+                <img src="assets/img/slider-one.jpg" class="slider">
+        <img src="assets/img/slider-one.jpg" class="slider"> 
+            </div>
+
+            <div class="hero__section2">
+                <h1 class="hero__section2_text">Level up your style with our</h1>
+                <p>Summer Collections</p>
+                <button>Shop Now →</button>
+            </div>
+
+            <div class="angle__one" onclick="prevSlide()">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div class="angle__two" onclick="nextSlide()">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </section>
+        <!--Brand section-->
+        <section class="brand__section">
+            <h1>Brand</h1>
+            <div class="brand__section__img">
+                <img src="assets/img/img-1.png" alt="brand-img">
+                <img src="assets/img/img-2.png" alt="brand-img">
+                <img src="assets/img/img-6.png" alt="brand-img">
+                <img src="assets/img/img-7.png" alt="brand-img">
+                <img src="assets/img/img-5.png" alt="brand-img">
+                <img src="assets/img/img-3.png" alt="brand-img">
+                <img src="assets/img/img-4.png" alt="brand-img">
+            </div>
+        </section>
+        <!---Customer Experiences-->
+        <section class="customer-section">
+            <h1>Customer Experiences</h1>
+            <div class="customer-section_one">
+                <div class="customer-section1">
+                    <i class="fa-regular fa-circle-check" style="color: rgb(30, 48, 80); font-size: 40px;"></i>
+                    <h3>Original Products</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="customer-section2">
+                    <i class="fa-regular fa-face-smile" style="color: rgb(30, 48, 80); font-size: 40px;"></i>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="customer-section3">
+                    <i class="fa-solid fa-broom" style="color: rgb(30, 48, 80); font-size: 40px;"></i>
+                    <h3>New Arrial Everyday</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="customer-section4">
+                    <i class="fa-solid fa-truck-fast" style="color: rgb(30, 48, 80);font-size: 40px;"></i>
+                    <h3>Fast & Free Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                </div>
+            </div>
+
+        </section>
+        <!---new arrivels section-->
+        <section class="new__arrivel__section" id="new-arrivel">
+            <h1>New Arrivels</h1>
+            <div class="new__arrivel__section_one">
+                <div class="new__arrivel__section1">
+                    <img src="assets/img/new-arrivels/img-1.png" alt="image1">
+                    <button>Shop Now →</button>
+                </div>
+                <div class="new__arrivel__section2">
+                    <img src="assets/img/new-arrivels/img-2.png" alt="image1">
+                    <button>Shop Now →</button>
+                </div>
+                <div class="new__arrivel__section3">
+                    <img src="assets/img/new-arrivels/img-3.png" alt="image1">
+                    <button>Shop Now →</button>
+                </div>
+                <div class="new__arrivel__section4">
+                    <img src="assets/img/new-arrivels/img-4.png" alt="image1">
+                    <button>Shop Now →</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!---Most Wanted section-->
+        <section class="wanted__section" id="most-wanted">
+            <h1>Most Wanted</h1>
+
+            <div class="wanted__section__one">
+
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-1.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale1">Sale</p>
+                </div>
+
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-2.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale2">Sale</p>
+                </div>
+
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-3.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale3">Sale</p>
+                </div>
+
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-4.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale4">Sale</p>
+                </div>
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-1.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale5">Sale</p>
+                </div>
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-6.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale6">Sale</p>
+                </div>
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-1.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale7">Sale</p>
+
+                </div>
+                <div class="wanted__section__one_1">
+                    <img src="assets/img/most-wanted/img-1.png" alt="most-wanted">
+                    <p class="wanted__section__one__sale8">Sale</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!---offer section-->
+        <section class="offer__section">
+            <div class="offer__section__one">
+                <div class="offer__section__imge">
+                    <img src="assets/img/offer.jpg" alt="">
+                </div>
+                <div class="offer__section__content">
+                    <h1 class="offer__section__content_text">Limited Offer</h1>
+                    <p>35% OFF on this for the first 30 Customers</p>
+                    <button>Shop Now →</button>
+                </div>
+            </div>
+        </section>
+
+        <!---news letter-->
+        <section class="news__letter">
+            <div class="news__letter_one">
+                <h1>Join our News Letter</h1>
+                <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+                <input type="text"><br>
+                <button>Subscribe</button>
+            </div>
+        </section>
+
+        <!---footer section-->
+        <section class="footer__section">
+            <div class="footer__section_title">
+                <h1>Nostra</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, delectus! Lorem ipsum dolor sit amet.
+                </p>
+                <div class="footer__section_social">
+                    <i class="fa-brands fa-facebook" style="color: rgb(234, 237, 241);"></i>
+                    <i class="fa-brands fa-instagram" style="color: rgb(229, 233, 240);"></i>
+                    <i class="fa-brands fa-pinterest" style="color: rgb(238, 239, 241);"></i>
+                </div>
+                <p>&copy 2026 nostra@gmail.com</p>
+            </div>
+
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
